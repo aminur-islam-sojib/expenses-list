@@ -5,10 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
+    <div class="h-10">
+        <h1 class="text-3xl font-bold text-center my-5">Expenses Tracker</h1>
 
+        <div class="flex flex-col gap-3 justify-center items-center">
+            <div><input type="text" class="bg-slate-500 border-solid h-10 pl-5 rounded-lg" placeholder="Add description"
+                    id="desc"></div>
+            <div><input type="number" class="bg-slate-500 h-10 pl-5 rounded-lg" placeholder="Add Cost" id="amount">
+            </div>
+            <button id="btn" class="bg-neutral-800 text-white p-3 rounded hover:bg-orange-400 cursor-pointer">Add
+                Expense</button>
+        </div>
+
+
+        <div>
+            <h1 class="text-center mt-5 text-2xl font-bold">Expense List</h1>
+            <div class="flex gap-5 m-5">
+                <div id="expense-list" class="p-5 m-10 mt-20 bg-slate-300 mr-5">Hello</div>
+            </div>
+            <div id="total-cost"></div>
+        </div>
+
+    </div>
 </body>
 
 </html>
